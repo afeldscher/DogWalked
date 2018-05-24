@@ -14,5 +14,11 @@ namespace DogWalked.Controllers
             return View();
         }
 
+        
+        public ActionResult Dogs()
+        {
+            return View("Dogs");
+        }
+
     }
 }

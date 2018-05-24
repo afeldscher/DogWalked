@@ -10,7 +10,33 @@ body {
 body .pageContainer {
   height: 100%;
 }
-body #login {
+#dogs {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#dogs #logoutBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #105585;
+  color: #fff;
+  border: 0;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.5s ease-in-out;
+}
+#dogs #logoutBtn:hover {
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5);
+}
+#dogs #smallTitle {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  font-family: 'Freestyle Script';
+  font-size: 2em;
+  color: #ffe353;
+}
+#login {
   height: 100%;
   width: 100%;
   text-align: center;
@@ -18,16 +44,16 @@ body #login {
   align-items: center;
   justify-content: center;
 }
-body #login #titleLogoBlock {
+#login #titleLogoBlock {
   padding-bottom: 10em;
 }
-body #login #titleLogoBlock #logo {
+#login #titleLogoBlock #logo {
   height: 10em;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-body #login #titleLogoBlock #title {
+#login #titleLogoBlock #title {
   font-family: 'Freestyle Script';
   font-size: 5em;
   color: #ffe353;
