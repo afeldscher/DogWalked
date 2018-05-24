@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DogWalked.Models;
 
 namespace DogWalked.Controllers
 {
@@ -17,7 +18,7 @@ namespace DogWalked.Controllers
         
         public ActionResult Dogs()
         {
-            return View("Dogs");
+            return View("Dogs", new DogPage());
         }
 
     }

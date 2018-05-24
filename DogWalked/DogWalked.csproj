@@ -143,10 +143,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\DogRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DogModel.cs" />
+    <Compile Include="Models\Dog.cs" />
+    <Compile Include="Models\DogPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +201,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login_Partial.cshtml" />
     <Content Include="Views\Home\Dogs.cshtml" />
+    <Content Include="Views\Home\AddDog_Partial.cshtml" />
+    <Content Include="Views\Home\Dog_Partial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

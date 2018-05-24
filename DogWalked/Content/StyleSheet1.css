@@ -17,16 +17,17 @@ body .pageContainer {
 }
 #dogs #logoutBtn {
   position: absolute;
+  display: block;
   top: 10px;
   right: 10px;
   background-color: #105585;
   color: #fff;
   border: 0;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s;
 }
 #dogs #logoutBtn:hover {
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
 #dogs #smallTitle {
   position: relative;
@@ -83,9 +84,22 @@ body .pageContainer {
 .animatedButton .btn-3 .round {
   background-color: #fff;
 }
+.animatedButton a {
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 12px 53px 12px 23px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #4183b1;
+  transition: all 0.05s ease-in-out;
+}
 .animatedButton a:hover {
   padding-left: 48px;
   padding-right: 28px;
+  color: #105585;
 }
 .animatedButton a:hover .txt {
   color: #105585;
@@ -96,17 +110,6 @@ body .pageContainer {
 }
 .animatedButton a:hover .round i {
   left: 12%;
-}
-.animatedButton a {
-  text-decoration: none;
-  border-radius: 30px;
-  padding: 12px 53px 12px 23px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-weight: bold;
-  position: relative;
-  transition: all 0.3s;
-  display: inline-block;
 }
 .animatedButton a span {
   position: relative;
