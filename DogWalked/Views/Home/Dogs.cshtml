@@ -14,7 +14,12 @@
     </a>
 
     <div class="container">
-
+        @for(int i =0; i < Model.dogs.Count; i++)
+        {
+            var dog = Model.dogs[i];
+            dog.Page = i;
+            @Html.Partial("Dog_Partial", dog)
+        }
     </div>
 
 </div>

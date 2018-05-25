@@ -7,6 +7,7 @@ namespace DogWalked.Models
 {
     public class Dog
     {
+        public int Page { get; set; }
         public String Name { get; set; }
         public String ImageUrl { get; set; }
         public double WalkStatus { get; set; }

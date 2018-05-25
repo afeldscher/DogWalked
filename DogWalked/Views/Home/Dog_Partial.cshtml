@@ -1,2 +1,68 @@
 ﻿@model DogWalked.Models.Dog
 
+
+<style>
+    #walk > .fill::after {
+        bottom: @(Model.WalkStatus)em !important;
+    }
+
+    #food > .fill::after {
+        bottom: @(Model.FoodStatus)em !important;
+    }
+
+    #water > .fill::after {
+        bottom: @(Model.WaterStatus)em !important;
+    }
+
+    #pee > .fill::after {
+        bottom: @(Model.PeeStatus)em !important;
+    }
+
+    #poop > .fill::after {
+        bottom: @(Model.PoopStatus)em !important;
+    }
+
+</style>
+
+<div class="dog">
+    <img class="dogImg" src="@Model.ImageUrl" />
+    <span class="dogName">@Model.Name</span>
+
+
+    <div class="row iconRow">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 col-xs-6 iconContainer">
+            <div id="walk" class="statusicon">
+                <div class="fill"></div>
+                <img class="iconImg" src="~/Content/icons/walk.png" />
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-6 iconContainer">
+            <div id="food" class="statusicon">
+                <div class="fill"></div>
+                <img class="iconImg" src="~/Content/icons/food.png" />
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-6 iconContainer">
+            <div id="water" class="statusicon">
+                <div class="fill"></div>
+                <img class="iconImg" src="~/Content/icons/water.png" />
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-6 iconContainer">
+            <div id="pee" class="statusicon">
+                <div class="fill"></div>
+                <img class="iconImg" src="~/Content/icons/pee.png" />
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-12 iconContainer">
+            <div id="poop" class="statusicon">
+                <div class="fill"></div>
+                <img class="iconImg" src="~/Content/icons/poop.png" />
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+
+</div>

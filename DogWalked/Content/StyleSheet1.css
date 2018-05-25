@@ -37,6 +37,85 @@ body .pageContainer {
   font-size: 2em;
   color: #ffe353;
 }
+#dogs .dog .dogImg {
+  margin-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10em;
+  width: auto;
+}
+#dogs .dog .dogName {
+  font-family: 'Franklin Gothic Demi Cond Regular';
+  font-size: 2em;
+  color: #105585;
+}
+#dogs .dog .iconRow {
+  margin-top: 1em;
+}
+#dogs .dog .iconContainer {
+  margin-bottom: .5em;
+}
+#dogs .dog .statusicon {
+  position: relative;
+  display: inline-block;
+  height: 8em;
+  width: 8em;
+  border-radius: .8em;
+  border-style: solid;
+  border-color: #ffe353;
+  border-width: 0.2em;
+  background: #234D6c;
+  overflow: hidden;
+}
+#dogs .dog .statusicon:hover .fill:after {
+  bottom: 8.0em !important;
+}
+#dogs .dog .statusicon .fill {
+  position: absolute;
+  bottom: 0;
+  height: 8.0em;
+  width: 7.6em;
+  border-radius: .6em;
+  background: #105585;
+}
+#dogs .dog .statusicon .fill:after {
+  box-shadow: inset 0px -4px 5px -2px rgba(0, 0, 0, 0.48);
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 120%;
+  bottom: 8.0em;
+  left: -48%;
+  background: #234D6c;
+  border-radius: 50%;
+  transform: scaleX(120%);
+  transition: all ease-in-out 0.8s;
+}
+#dogs .dog .iconImg {
+  position: relative;
+  z-index: 5;
+  height: 7em;
+}
+#dogs .dog #food img {
+  position: absolute;
+  left: 0.15em;
+  top: 0.8em;
+  height: 6.2em;
+}
+#dogs .dog #pee img {
+  position: absolute;
+  left: 2.0em;
+  top: 0.6em;
+  height: 6.5em;
+}
+#dogs .dog #poop img {
+  position: absolute;
+  left: 0.8em;
+  top: 0.8em;
+  height: 6.5em;
+}
 #login {
   height: 100%;
   width: 100%;

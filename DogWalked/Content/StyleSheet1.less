@@ -11,6 +11,10 @@
 @black: #000;
 @white: #fff;
 
+@titleFont: 'Freestyle Script';
+@regText: 'Franklin Gothic Demi Cond Regular';
+
+
 body {
     height: 100%;
     width: 100%;
@@ -21,7 +25,7 @@ body {
     }
 }
 
-
+//----Dogs Page----
 #dogs {
     height: 100%;
     width: 100%;
@@ -47,9 +51,116 @@ body {
         position: relative;
         display: inline-block;
         padding-top: 0.2em;
-        font-family: 'Freestyle Script';
+        font-family: @titleFont;
         font-size: 2em;
         color: @titleYellow;
+    }
+
+    .dog {
+
+        .dogImg {
+            margin-top: 1em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 10em;
+            width: auto;
+        }
+
+        .dogName {
+            font-family: @regText;
+            font-size: 2em;
+            color: @deepBlue;
+        }
+
+        .iconRow {
+            margin-top: 1em;
+        }
+
+        .iconContainer {
+            margin-bottom: .5em;
+        }
+
+        .statusicon {
+            position: relative;
+            display: inline-block;
+            height: 8em;
+            width: 8em;
+            border-radius: .8em;
+            border-style: solid;
+            border-color: @titleYellow;
+            border-width: 0.2em;
+            background: @dryBlue;
+            overflow: hidden;
+            //z-index: 1;
+            &:hover {
+                .fill {
+
+                    &:after {
+                        bottom: 8.0em !important;
+                    }
+                }
+            }
+
+            .fill {
+                position: absolute;
+                bottom: 0;
+                //margin-top: .02em;
+                height: 8.0em;
+                width: 7.6em;
+                border-radius: .6em;
+                background: @deepBlue;
+                //z-index: 2;
+                &:after {
+                    box-shadow: inset 0px -4px 5px -2px rgba(0,0,0,0.48);
+                    content: " ";
+                    position: absolute;
+                    display: block;
+                    width: 200%;
+                    height: 120%;
+                    bottom: 8.0em; //CHANGE HERE FOR SHADING. -1 to 8
+                    left: -48%;
+                    background: @dryBlue;
+                    border-radius: 50%;
+                    //clip: rect(4.0em, 15em, 15em, 2em);
+                    transform: scaleX(120%);
+                    transition: all ease-in-out 0.8s;
+                }
+            }
+        }
+
+        .iconImg {
+            position: relative;
+            z-index: 5;
+            height: 7em;
+        }
+
+        #food {
+            img {
+                position: absolute;
+                left: 0.15em;
+                top: 0.8em;
+                height: 6.2em;
+            }
+        }
+
+        #pee {
+            img {
+                position: absolute;
+                left: 2.0em;
+                top: 0.6em;
+                height: 6.5em;
+            }
+        }
+
+        #poop {
+            img {
+                position: absolute;
+                left: 0.8em;
+                top: 0.8em;
+                height: 6.5em;
+            }
+        }
     }
 }
 
@@ -72,26 +183,15 @@ body {
         }
 
         #title {
-            font-family: 'Freestyle Script';
+            font-family: @titleFont;
             font-size: 5em;
             color: @titleYellow;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
 //------Styles for home page button-----
 //Inspired by:
 //http://cssdeck.com/labs/esbtmdeg
-
 .animatedButton {
     display: block;
     padding-top: 2em;
@@ -107,7 +207,7 @@ body {
             display: inline-block;
             vertical-align: middle;
             color: @white;
-            font-family: 'Franklin Gothic Demi Cond Regular';
+            font-family: @regText;
             font-size: 1.3em;
         }
     }
