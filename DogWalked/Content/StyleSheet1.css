@@ -37,7 +37,20 @@ body .pageContainer {
   font-size: 2em;
   color: #ffe353;
 }
+#dogs .dog .arrow {
+  height: 2em;
+  position: absolute;
+  top: 8.5em;
+}
+#dogs .dog .arrow.leftArrow {
+  left: 3em;
+}
+#dogs .dog .arrow.rightArrow {
+  transform: scaleX(-1);
+  right: 3em;
+}
 #dogs .dog .dogImg {
+  border-radius: 0.8em;
   margin-top: 1em;
   display: block;
   margin-left: auto;
@@ -56,11 +69,30 @@ body .pageContainer {
 #dogs .dog .iconContainer {
   margin-bottom: .5em;
 }
-#dogs .dog .statusicon {
-  position: relative;
-  display: inline-block;
+#dogs .dog .iconContainer .iconContainerInner {
   height: 8em;
   width: 8em;
+  display: inline-block;
+  position: relative;
+}
+#dogs .dog .dot {
+  background-color: #c90c1e;
+  border-radius: 2em;
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  z-index: 5;
+  right: -0.25em;
+  top: -0.25em;
+  box-shadow: 2px 4px 5px -2px rgba(0, 0, 0, 0.48);
+  visibility: hidden;
+}
+#dogs .dog .statusicon {
+  box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, 0.48);
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
   border-radius: .8em;
   border-style: solid;
   border-color: #ffe353;

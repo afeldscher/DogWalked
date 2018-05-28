@@ -22,14 +22,14 @@ namespace DogWalked.Controllers
             return View("Dogs", new DogPage()
             {
                 dogs = new List<Dog> { new Dog() {
-                        FoodStatus = ToDogService.percentToVal(0.5),
+                        FoodStatus = ToDogService.percentToVal(0.8),
                         Name = "Bailey",
-                        PeeStatus = ToDogService.percentToVal(1),
-                        PoopStatus = ToDogService.percentToVal(0.75),
-                        WalkStatus = ToDogService.percentToVal(0.25),
+                        PeeStatus = ToDogService.percentToVal(.7),
+                        PoopStatus = ToDogService.percentToVal(0.1),
+                        WalkStatus = ToDogService.percentToVal(0.18),
                         WaterStatus = ToDogService.percentToVal(0.3),
-                        ImageUrl = "/DogWalked/Content/Logo.png"
-                    }
+                        ImageUrl = Url.Content("~/Content/dogimg/Bailey.jpg")
+                }
                 }
             });
         }
