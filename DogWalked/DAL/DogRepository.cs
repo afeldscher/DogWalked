@@ -14,7 +14,8 @@ namespace DogWalked.DAL
 
         public Dog getDog(String name)
         {
-            if (dict.TryGetValue(name, out var dog))
+            Dog dog = null;
+            if (dict.TryGetValue(name, out dog))
             {
                 return dog;
             }
