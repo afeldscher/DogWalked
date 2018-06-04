@@ -2,6 +2,10 @@
   font-family: 'Franklin Gothic Demi Cond Regular';
   src: url('../fonts/Franklin Gothic Demi Cond Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'FREESCPT';
+  src: url('../fonts/FREESCPT.TTF') format('truetype');
+}
 body {
   height: 100%;
   width: 100%;
@@ -33,7 +37,7 @@ body .pageContainer {
   position: relative;
   display: inline-block;
   padding-top: 0.2em;
-  font-family: 'Freestyle Script';
+  font-family: 'FREESCPT';
   font-size: 2em;
   color: #ffe353;
 }
@@ -173,7 +177,7 @@ body .pageContainer {
   margin-right: auto;
 }
 #login #titleLogoBlock #title {
-  font-family: 'Freestyle Script';
+  font-family: 'FREESCPT';
   font-size: 5em;
   color: #ffe353;
 }

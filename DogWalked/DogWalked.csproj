@@ -187,6 +187,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="fonts\Franklin Gothic Demi Cond Regular.ttf" />
+    <Content Include="fonts\FREESCPT.TTF" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
