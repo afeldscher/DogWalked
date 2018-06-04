@@ -153,12 +153,17 @@
     <Compile Include="Services\ToDogService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="android-chrome-192x192.png" />
+    <Content Include="android-chrome-256x256.png" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="browserconfig.xml" />
     <Content Include="Content\arrow.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dogimg\Bailey.jpg" />
     <Content Include="Content\dogimg\Hamilton.jpg" />
     <Content Include="Content\dogimg\Sophie.jpg" />
+    <Content Include="Content\fontawesome.min.css" />
     <Content Include="Content\icons\food.png" />
     <Content Include="Content\icons\walk.png" />
     <Content Include="Content\icons\pee.png" />
@@ -171,10 +176,14 @@
     <Content Include="Content\StyleSheet1.min.css">
       <DependentUpon>StyleSheet1.css</DependentUpon>
     </Content>
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="mstile-150x150.png" />
+    <Content Include="safari-pinned-tab.svg" />
     <Content Include="Scripts\app\scripts.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -217,6 +226,7 @@
     <Content Include="Views\Home\Dog_Partial.cshtml" />
     <Content Include="Views\Home\CreateDog_Partial.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="site.webmanifest" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
