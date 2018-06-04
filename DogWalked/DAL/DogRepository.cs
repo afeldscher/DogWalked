@@ -9,7 +9,6 @@ namespace DogWalked.DAL
 {
     public class DogRepository
     {
-
         private static Dictionary<String, Dog> dict = new Dictionary<String, Dog>();
 
         public Dog getDog(String name)
@@ -29,7 +28,7 @@ namespace DogWalked.DAL
         {
             if (dict.ContainsKey(dog.Name))
             {
-                //TODO COnflict exception
+                //TODO Conflict exception
                 throw new Exception("Conflicting dog name");
             }
             dict.Add(dog.Name, dog);

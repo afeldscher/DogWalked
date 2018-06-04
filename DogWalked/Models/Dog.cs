@@ -16,7 +16,7 @@ namespace DogWalked.Models
         public double PeeStatus { get; set; }
         public double PoopStatus { get; set; }
 
-        //TODO: Move these calcs elsewhere
+        //TODO: Move these calcs
         //Not percents, height em
         public bool WalkDot
         {

@@ -29,6 +29,24 @@ namespace DogWalked.Controllers
                         WalkStatus = ToDogService.percentToVal(0.18),
                         WaterStatus = ToDogService.percentToVal(0.3),
                         ImageUrl = Url.Content("~/Content/dogimg/Bailey.jpg")
+                },
+                new Dog() {
+                        FoodStatus = ToDogService.percentToVal(0.1),
+                        Name = "Hamilton",
+                        PeeStatus = ToDogService.percentToVal(1.0),
+                        PoopStatus = ToDogService.percentToVal(1.0),
+                        WalkStatus = ToDogService.percentToVal(1.0),
+                        WaterStatus = ToDogService.percentToVal(0.1),
+                        ImageUrl = Url.Content("~/Content/dogimg/Hamilton.jpg")
+                },
+                new Dog() {
+                        FoodStatus = ToDogService.percentToVal(0.1),
+                        Name = "Sophie",
+                        PeeStatus = ToDogService.percentToVal(0.1),
+                        PoopStatus = ToDogService.percentToVal(0.1),
+                        WalkStatus = ToDogService.percentToVal(0.1),
+                        WaterStatus = ToDogService.percentToVal(0.1),
+                        ImageUrl = Url.Content("~/Content/dogimg/Sophie.jpg")
                 }
                 }
             });

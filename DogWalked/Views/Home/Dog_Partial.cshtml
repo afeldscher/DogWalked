@@ -42,21 +42,25 @@
         visibility: @(Model.Page == 0 ? "hidden" : "visible");
     }
 
+    #dog@(Model.Page) {
+        display: @(Model.Page == 0 ? "block" : "none");
+    }
+
 </style>
 
 <div class="dog" id="dog@(Model.Page)">
     <img class="dogImg" src="@Model.ImageUrl" />
     <span class="dogName">@Model.Name</span>
 
-    <img class="arrow leftArrow" src="~/Content/arrow.png" />
-    <img class="arrow rightArrow" src="~/Content/arrow.png" />
+    <img class="arrow leftArrow" onclick="leftarrow();" src="~/Content/arrow.png" />
+    <img class="arrow rightArrow" onclick="rightarrow();" src="~/Content/arrow.png" />
 
     <div class="row iconRow">
         <div class="col-md-1"></div>
         <div class="col-md-2 col-xs-6 iconContainer">
             <div class="iconContainerInner">
                 <div class="dot" id="walkDot"></div>
-                <div id="walk" class="statusicon">
+                <div id="walk" class="statusicon" onclick="iconClick('#dog@(Model.Page) #walk');">
                     <div class="fill"></div>
                     <img class="iconImg" src="~/Content/icons/walk.png" />
                 </div>
@@ -65,7 +69,7 @@
         <div class="col-md-2 col-xs-6 iconContainer">
             <div class="iconContainerInner">
                 <div class="dot" id="foodDot"></div>
-                <div id="food" class="statusicon">
+                <div id="food" class="statusicon" onclick="iconClick('#dog@(Model.Page) #food');">
                     <div class="fill"></div>
                     <img class="iconImg" src="~/Content/icons/food.png" />
                 </div>
@@ -74,7 +78,7 @@
         <div class="col-md-2 col-xs-6 iconContainer">
             <div class="iconContainerInner">
                 <div class="dot" id="waterDot"></div>
-                <div id="water" class="statusicon">
+                <div id="water" class="statusicon" onclick="iconClick('#dog@(Model.Page) #water');">
                     <div class="fill"></div>
                     <img class="iconImg" src="~/Content/icons/water.png" />
                 </div>
@@ -83,7 +87,7 @@
         <div class="col-md-2 col-xs-6 iconContainer">
             <div class="iconContainerInner">
                 <div class="dot" id="peeDot"></div>
-                <div id="pee" class="statusicon">
+                <div id="pee" class="statusicon" onclick="iconClick('#dog@(Model.Page) #pee');">
                     <div class="fill"></div>
                     <img class="iconImg" src="~/Content/icons/pee.png" />
                 </div>
@@ -92,7 +96,7 @@
         <div class="col-md-2 col-xs-12 iconContainer">
             <div class="iconContainerInner">
                 <div class="dot" id="poopDot"></div>
-                <div id="poop" class="statusicon">
+                <div id="poop" class="statusicon" onclick="iconClick('#dog@(Model.Page) #poop');">
                     <div class="fill"></div>
                     <img class="iconImg" src="~/Content/icons/poop.png" />
                 </div>

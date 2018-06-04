@@ -157,6 +157,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dogimg\Bailey.jpg" />
+    <Content Include="Content\dogimg\Hamilton.jpg" />
     <Content Include="Content\icons\food.png" />
     <Content Include="Content\icons\walk.png" />
     <Content Include="Content\icons\pee.png" />
@@ -173,6 +174,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\app\scripts.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
