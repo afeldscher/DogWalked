@@ -49,11 +49,13 @@
 </style>
 
 <div class="dog" id="dog@(Model.Page)">
-    <img class="dogImg" src="@Model.ImageUrl" />
-    <span class="dogName">@Model.Name</span>
+    <div>
+        <img class="arrow leftArrow" onclick="leftarrow();" src="~/Content/arrow.png" />
+        <img class="dogImg" src="@Model.ImageUrl" />
+        <img class="arrow rightArrow" onclick="rightarrow();" src="~/Content/arrow.png" />
+    </div>
 
-    <img class="arrow leftArrow" onclick="leftarrow();" src="~/Content/arrow.png" />
-    <img class="arrow rightArrow" onclick="rightarrow();" src="~/Content/arrow.png" />
+    <span class="dogName">@Model.Name</span>
 
     <div class="row iconRow">
         <div class="col-md-1"></div>

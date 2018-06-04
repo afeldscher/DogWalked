@@ -1,10 +1,16 @@
 ﻿
 
 <div id="createDog">
-    <img id="createDogLogo" src="~/Content/Logo.png" />
+    <div>
+        <img class="arrow leftArrow" onclick="leftarrow();" src="~/Content/arrow.png" />
+        <img id="createDogLogo" src="~/Content/Logo.png" />
+        <img class="arrow rightArrow" onclick="rightarrow();" style="visibility:hidden" src="~/Content/arrow.png" />
+    </div>
 
-    <div id="nameLabel" class="label">
-        <span id="nameLabel">Name</span> <input id="nameId" type="text" />
+
+    <div>
+        <span id="nameLabel" class="label">Name</span>
+        <input id="nameId" type="text" />
     </div>
 
     <div id="hrsSelectors">

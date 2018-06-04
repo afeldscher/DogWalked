@@ -41,22 +41,18 @@ body .pageContainer {
   font-size: 2em;
   color: #ffe353;
 }
-#dogs .dog .arrow {
+#dogs .arrow {
   height: 2em;
-  position: absolute;
-  top: 8.5em;
+  position: relative;
+  margin: 1em;
 }
-#dogs .dog .arrow.leftArrow {
-  left: 3em;
-}
-#dogs .dog .arrow.rightArrow {
+#dogs .arrow.rightArrow {
   transform: scaleX(-1);
-  right: 3em;
 }
 #dogs .dog .dogImg {
   border-radius: 0.8em;
   margin-top: 1em;
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   height: 10em;
@@ -158,6 +154,19 @@ body .pageContainer {
   left: 0.8em;
   top: 0.8em;
   height: 6.5em;
+}
+#createDog #createDogLogo {
+  margin-top: 1em;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10em;
+  width: auto;
+}
+#createDog .label {
+  font-family: 'Franklin Gothic Demi Cond Regular';
+  font-size: 1.5em;
+  margin-top: 2em;
 }
 #login {
   height: 100%;

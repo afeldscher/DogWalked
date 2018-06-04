@@ -225,7 +225,6 @@
     <Content Include="Views\Home\AddDog_Partial.cshtml" />
     <Content Include="Views\Home\Dog_Partial.cshtml" />
     <Content Include="Views\Home\CreateDog_Partial.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
     <Content Include="site.webmanifest" />
   </ItemGroup>
   <ItemGroup>

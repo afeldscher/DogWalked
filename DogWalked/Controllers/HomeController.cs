@@ -16,12 +16,6 @@ namespace DogWalked.Controllers
             return View();
         }
 
-        public ActionResult Test()
-        {
-            return View("Test");
-        }
-
-
         public ActionResult Dogs()
         {
             return View("Dogs", new DogPage()

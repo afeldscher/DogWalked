@@ -62,26 +62,28 @@ body {
         color: @titleYellow;
     }
 
-    .dog {
-        .arrow {
-            height: 2em;
-            position: absolute;
-            top: 8.5em;
+    .arrow {
+        height: 2em;
+        position: relative;
+        //top: 8.5em;
 
-            &.leftArrow {
-                left: 3em;
-            }
+        margin: 1em;
 
-            &.rightArrow {
-                transform: scaleX(-1);
-                right: 3em;
-            }
+        &.leftArrow {
+            //left: 3em;
         }
 
+        &.rightArrow {
+            transform: scaleX(-1);
+            //right: 3em;
+        }
+    }
+
+    .dog {
         .dogImg {
             border-radius: 0.8em;
             margin-top: 1em;
-            display: block;
+            display: inline-block;
             margin-left: auto;
             margin-right: auto;
             height: 10em;
@@ -218,6 +220,30 @@ body {
     }
 }
 
+//-------Create Dog-----
+#createDog {
+    #createDogLogo {
+        margin-top: 1em;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 10em;
+        width: auto;
+    }
+
+    .label {
+        font-family: @regText;
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+
+
+}
+
+
+
+
+//-----Login------
 #login {
     height: 100%;
     width: 100%;

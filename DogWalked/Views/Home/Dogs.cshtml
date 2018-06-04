@@ -20,6 +20,12 @@
             dog.Page = i;
             @Html.Partial("Dog_Partial", dog)
         }
+
+        <!--Adding Settings Page-->
+        <div id="dog@(Model.dogs.Count)" style="display:none">
+            @Html.Partial("CreateDog_Partial")
+        </div>
+
     </div>
 
 </div>
