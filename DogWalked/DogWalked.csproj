@@ -158,6 +158,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dogimg\Bailey.jpg" />
     <Content Include="Content\dogimg\Hamilton.jpg" />
+    <Content Include="Content\dogimg\Sophie.jpg" />
     <Content Include="Content\icons\food.png" />
     <Content Include="Content\icons\walk.png" />
     <Content Include="Content\icons\pee.png" />
@@ -213,6 +214,8 @@
     <Content Include="Views\Home\Dogs.cshtml" />
     <Content Include="Views\Home\AddDog_Partial.cshtml" />
     <Content Include="Views\Home\Dog_Partial.cshtml" />
+    <Content Include="Views\Home\CreateDog_Partial.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
