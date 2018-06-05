@@ -1,6 +1,6 @@
 ﻿
 page = 0;
-newUrl = "/DogWalked/Content/Logo.png";
+newUrl = "/Content/Logo.png";
 
 function leftarrow() {
     //if there is no previous page exit
@@ -124,9 +124,7 @@ function handleTouchMove(evt) {
             }
         } else {
             if (yDiff > 0) {/* up swipe */
-                alert('Up!');
             } else { /* down swipe */
-                alert('Down!');
             }
         }
         /* reset values */
