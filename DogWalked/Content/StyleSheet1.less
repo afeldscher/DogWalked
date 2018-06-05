@@ -66,7 +66,6 @@ body {
         height: 2em;
         position: relative;
         //top: 8.5em;
-
         margin: 1em;
 
         &.leftArrow {
@@ -222,22 +221,46 @@ body {
 
 //-------Create Dog-----
 #createDog {
-    #createDogLogo {
-        margin-top: 1em;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 10em;
-        width: auto;
+    #imgContainer {
+        position: relative;
+
+        #createDogLogo {
+            margin-top: 1em;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 10em;
+            width: auto;
+        }
+
+        #camera {
+            position: absolute;
+            height: 2em;
+            top: 37%;
+            left: 45%;
+        }
     }
 
-    .label {
+    #imageUpload {
+        color: @white;
+        display: none;
+    }
+
+    .label, .hrs {
+        display: inline-block;
+        color: @white;
         font-family: @regText;
         font-size: 1.5em;
-        margin-top: 2em;
+        margin-top: 0.5em;
     }
 
+    .hrs {
+        margin-left: .5em;
+    }
 
+    #submitBtn {
+        margin-top: 0.5em;
+    }
 }
 
 

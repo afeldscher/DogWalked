@@ -155,7 +155,10 @@ body .pageContainer {
   top: 0.8em;
   height: 6.5em;
 }
-#createDog #createDogLogo {
+#createDog #imgContainer {
+  position: relative;
+}
+#createDog #imgContainer #createDogLogo {
   margin-top: 1em;
   display: inline-block;
   margin-left: auto;
@@ -163,10 +166,29 @@ body .pageContainer {
   height: 10em;
   width: auto;
 }
-#createDog .label {
+#createDog #imgContainer #camera {
+  position: absolute;
+  height: 2em;
+  top: 37%;
+  left: 45%;
+}
+#createDog #imageUpload {
+  color: #fff;
+  display: none;
+}
+#createDog .label,
+#createDog .hrs {
+  display: inline-block;
+  color: #fff;
   font-family: 'Franklin Gothic Demi Cond Regular';
   font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 0.5em;
+}
+#createDog .hrs {
+  margin-left: .5em;
+}
+#createDog #submitBtn {
+  margin-top: 0.5em;
 }
 #login {
   height: 100%;

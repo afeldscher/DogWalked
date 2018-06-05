@@ -1,80 +1,65 @@
 ﻿
-
 <div id="createDog">
-    <div>
+    <div id="imgContainer">
         <img class="arrow leftArrow" onclick="leftarrow();" src="~/Content/arrow.png" />
-        <img id="createDogLogo" src="~/Content/Logo.png" />
+        <img id="camera" src="~/Content/camera.png" onclick="uploadImg();" />
+        <img id="createDogLogo" src="~/Content/Logo.png" onclick="uploadImg();" />
         <img class="arrow rightArrow" onclick="rightarrow();" style="visibility:hidden" src="~/Content/arrow.png" />
     </div>
 
+    <input id="imageUpload" type="file" onchange="readURL(this);" />
 
     <div>
         <span id="nameLabel" class="label">Name</span>
-        <input id="nameId" type="text" />
+        <input id="dogName" type="text" />
     </div>
 
     <div id="hrsSelectors">
         <div>
             <span class="label">Walk Timer</span>
             <select id="walk" class="timer">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
+                @Html.Partial("Options")
             </select>
-            <span>hrs</span>
+            <span class="hrs">hrs</span>
         </div>
         <div>
             <span class="label">Food Timer</span>
             <select id="food" class="timer">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
+                @Html.Partial("Options")
             </select>
-            <span>hrs</span>
+            <span class="hrs">hrs</span>
         </div>
         <div>
             <span class="label">Water Timer</span>
             <select id="water" class="timer">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
+                @Html.Partial("Options")
             </select>
-            <span>hrs</span>
+            <span class="hrs">hrs</span>
         </div>
         <div>
             <span class="label">Pee Timer</span>
             <select id="pee" class="timer">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
+                @Html.Partial("Options")
             </select>
-            <span>hrs</span>
+            <span class="hrs">hrs</span>
         </div>
         <div>
             <span class="label">Poop Timer</span>
             <select id="poop" class="timer">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
+                @Html.Partial("Options")
             </select>
-            <span>hrs</span>
+            <span class="hrs">hrs</span>
         </div>
     </div>
-    <button id="submitBtn">Submit</button>
+    <!--<button id="submitBtn">Submit</button>-->
+    <div class="animatedButton">
+        <div>
+            <a href="#" class="btn btn-3" onclick="createDog();">
+                <span class="txt">Create</span>
+                <span class="round"><i class="fa fa-chevron-right"></i></span>
+            </a>
+        </div>
+    </div>
+
 
 </div>

@@ -26,9 +26,10 @@
         @RenderBody()
     </div>
 
-    <script src="~/Scripts/app/scripts.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/app/scripts.js"></script>
+
 </body>
 </html>
